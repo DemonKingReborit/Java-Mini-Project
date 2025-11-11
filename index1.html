@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Blogging Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NovaBlog</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">My Blogs</a>
+      <a href="#">Write</a>
+      <a href="#">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="create-post">
+      <h2>Write a New Blog</h2>
+      <input type="text" id="title" placeholder="Enter blog title">
+      <textarea id="content" placeholder="Write your blog content here..."></textarea>
+      <button id="postBtn">Post Blog</button>
+    </section>
+
+    <section class="blog-feed">
+      <h2>Recent Blogs</h2>
+      <div id="blogsContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 NovaBlog | Made with ❤️ by Amit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

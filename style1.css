@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #6366f1;
+  --text: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--card);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--accent);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.create-post, .blog-feed {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: .5rem;
+}
+
+input, textarea {
+  width: 100%;
+  background: transparent;
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #818cf8;
+}
+
+.blog-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.blog-card h3 {
+  color: var(--accent);
+  margin-bottom: .5rem;
+}
+
+footer {
+  text-align: center;
+  background: var(--card);
+  padding: 1rem;
+  border-top: 2px solid var(--accent);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Blogging Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Blogging Platform</h1>
+    <nav>
+      <button id="loginBtn">Login</button>
+      <button id="registerBtn">Register</button>
+      <button id="logoutBtn" class="hidden">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Authentication -->
+    <section id="authSection">
+      <h2 id="formTitle">Login</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button id="authSubmit">Login</button>
+      <p id="switchText">
+        Don’t have an account? <a href="#" id="switchLink">Register</a>
+      </p>
+    </section>
+
+    <!-- Post creation -->
+    <section id="postSection" class="hidden">
+      <h2>Create New Post</h2>
+      <input type="text" id="postTitle" placeholder="Post Title" required>
+      <textarea id="postContent" placeholder="Write something..." required></textarea>
+      <button id="addPost">Publish</button>
+    </section>
+
+    <!-- Blog feed -->
+    <section id="feedSection" class="hidden">
+      <h2>All Posts</h2>
+      <div id="feed"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Blogging Platform | Built with 💛 HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
